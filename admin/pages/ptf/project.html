@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Platform de sourcing projets</title>
+    <!-- Favicon-->
+    <link rel="icon" href="https://test-api.particeep.com/document/bcf9db31-c0a4-4ed7-b34e-a979b84bf075" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="../../plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+
+    <link href="../../css/project.css" rel="stylesheet">
+
+    <link href="../../plugins/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" />
+    <link href="../../plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-light-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Chargmenet...</p>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="START TYPING...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="home-session.html">LOIRE ATLANTIQUE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Call Search -->
+                <li><a href="candidater.html" >Candidater</a></li>
+                    <li><a href="projects.html" >Liste des projets</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Mon compte
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Mon compte</li>
+                        <li class="body">
+                            <ul class="menu">
+                               <li>
+                                    <a href="profile.html">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">person</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mon profil</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-projects.html">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">folder</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mes projet</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="espace-evaluation.html">
+                                        <div class="icon-circle bg-red">
+                                            <i class="material-icons">assignment</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Espace évaluateur</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html">
+                                        <div class="icon-circle bg-orange">
+                                            <i class="material-icons">desktop_windows</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Administration</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="home.html" style="display: flex; align-items: center;">
+                                        <div class="icon-circle bg-blue-grey">
+                                            <i class="material-icons">exit_to_app</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Déconnecter</h4>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer">
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section style="width: 100%; margin-top: 70px;">
+    <div class="project-detail-cover">
+
+      
+            <div class="detail_header">
+                <div class="container">
+                    <div class="detail_header_title">
+
+                        <div class="detail_logo">
+                            <img class="detail_logo_img" src="https://api.particeep.com/document/b527ab48-04dd-412b-82c2-97a42272eb21">
+                        </div>
+
+
+                        <div>
+                            <h1 class="detail_name truncate">Makheia</h1>
+                            <ul class="detail_tags">
+                                <li class="detail_tag_logo">
+                                    <i class="material-icons detail_tag_logo_i">location_on</i>
+                                    <span class="italic">Inconnu
+                                    </span>
+                                </li>
+                                <li class="detail_tag_logo">
+                                    <md-icon class="detail_tag_logo_i material-icons mat-icon">
+                                        label
+                                    </md-icon>
+                                                Art, IT
+                                </li>
+                                <li class="detail_tag_logo">
+                                    <md-icon class="detail_tag_logo_i material-icons mat-icon">
+                                        public
+                                    </md-icon>
+                                    <a href="http://makheia.com/" style="    color: rgba(255,255,255,0.72);">Site web</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                   </div>    
+                
+
+                    <div class="row clearfix detail_row">
+                        <div class="col-md-4 col-xs-12 detail_stats">
+                            <div class="vote-info">
+                                <div class="vote-up">
+                                    <p>Vote haut</p>
+                                    <h3 class="text-center" style="margin:0;">201</h3>
+                                </div>
+                                <div class="vote-up">
+                                    <p>Vote bas</p>
+                                    <h3 class="text-center" style="margin:0;">20</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 detail_menu-wrapper">
+                            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#description" data-toggle="tab"><i class="material-icons">info</i><span class="hidden-xs-down detail_menu_label">A propsos</span></a></li>
+                                <li role="presentation"><a href="#questionnaire" data-toggle="tab"><i class="material-icons">assignment</i><span class="hidden-xs-down detail_menu_label">Questionnaire</span></a></li>
+                                <li role="presentation"><a href="#commentaire" data-toggle="tab"><i class="material-icons">comment</i><span class="hidden-xs-down detail_menu_label">Commentaire</span></a></li>
+                                <li role="presentation"><a href="#notation" data-toggle="tab"><i class="material-icons">assessment</i><span class="hidden-xs-down detail_menu_label">Notation</span></a></li>
+                                <li role="presentation"><a href="#evaluation" data-toggle="tab"><i class="material-icons">done_all</i><span class="hidden-xs-down detail_menu_label">Evaluation</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="detail_body">
+
+                <div class="container">
+            
+            
+        
+            <div class="row clearfix">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="body">
+
+                        <div class="project-vote text-center" style="text-align:center; margin: 20px 0 40px;">
+                            <span class="vote-badge badge bg-blue"><i class="material-icons card-project_tag_i">thumb_up</i> 201 </span>
+                            <span class="vote-badge badge bg-blue"><i class="material-icons card-project_tag_i">thumb_down</i> 20 </span>
+                        </div>
+
+                            <h3 class="text-center">Chatre de caractères</h2><br>
+                            <canvas id="radar_chart" height="150"></canvas>
+                            <br><br>
+                            <h3 class="text-center">Chatre de votes</h2><br>
+                            <canvas id="bar_chart" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                         <div class="body">
+                    <!-- Nav tabs -->
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="description">
+                                <p>Description du projet</p>
+                                    <div class="description-long">
+                                            <p class="app_entry_lead" style="line-height: 1.4; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 20px; margin-bottom: 20px; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">Des langages de script serveur aux frameworks JavaScript client, une étude de Breaz fait le point les technologies web les plus utilisées par les start-up en fonction de leur ancienneté.</span></p><div id="ctn_infeed" style="letter-spacing: -0.42px; box-sizing: inherit;"><div class="ba infeed" id="ba_infeed" style="box-sizing: inherit;"></div></div><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"></p><aside class="jAslTeleport" style="margin: 12.39px 0px 12.39px 12.39px; letter-spacing: -0.42px; float: right; position: relative; box-sizing: inherit;" data-maxwidth="768" data-minwidth="480" data-positionid="Right"></aside><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;">Quels sont les langages et&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/solutions/pratique/dictionnaire-du-webmastering/outils/19466/framework-definition-traduction.html"><span style="font-size: 14px;">frameworks</span></a><span style="font-size: 14px;">&nbsp;web les plus utilisés en France par les entreprises en fonction de leur année de création&nbsp;? C'est la question à laquelle a souhaité répondre la place de marché&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="https://breaz.io/" target="_blank"><span style="font-size: 14px;">Breaz</span></a><span style="font-size: 14px;">&nbsp;(qui se spécialise dans le recrutement des&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/management/pratique/fiches-metiers/metiers-du-web/19103/developpeur-web-salaire-junior-formation-cursus.html"><span style="font-size: 14px;">développeurs</span></a><span style="font-size: 14px;">).&nbsp;Son&nbsp;enquête repose sur l'analyse de l'environnement logiciel de plus de 600&nbsp;sociétés françaises (majoritairement des start-up) clientes de la plateforme.&nbsp;</span></span></p><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">"Une société créée par exemple en 2008&nbsp;peut avoir modifié sa stack au cours du temps. Il s'agit donc, ici, d'une 'photographie' permettant de dégager une tendance", précise Edouard Rosenblum, co-fondateur et PDG de Breaz.</span></p><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;"><br></span></p><h2 style="line-height: 1.25; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 0.52em; margin-bottom: 0px; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">Node.js et Ruby montent en flèche</span></h2><h2 style="line-height: 1.25; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 0.52em; margin-bottom: 0px; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;"><br></span></h2><p id="docs-internal-guid-fcef824a-57e5-bdb6-55e3-eecd556e1f6d" style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;">Premier constat : les start-up françaises les plus récentes ont tendance à privilégier plus souvent Node.js et Ruby comme technologies de backend au détriment de PHP ou&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/solutions/pratique/dictionnaire-du-webmastering/technologies-langages/19494/java-definition.html"><span style="font-size: 14px;">Java</span></a><span style="font-size: 14px;">.&nbsp;"On note d'ailleurs des tensions sur le marché du recrutement autour de Node.js et Ruby, les recruteurs se disputant les meilleurs profils centrés sur ces langages", indique Edouard Rosenblum.</span></span></p><p style="text-align: center; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><a class="fancy" style="color: rgb(48, 48, 48); font-family: &quot;Times New Roman&quot;; text-decoration: underline; box-sizing: inherit;" href="http://i-cms.journaldunet.com/image_cms/original/10207328.jpg"><img style="margin: 0.75em auto; vertical-align: top; display: none !important; max-width: 100%; box-sizing: inherit;" alt="" src="http://i-cms.journaldunet.com/image_cms/600/10207328.jpg"></a></p><p id="docs-internal-guid-fcef824a-57e5-e4bb-f5f6-99120c06d135" style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="color: rgb(48, 48, 48); font-size: 14px;">Côté frameworks JavaScript orientés interface utilisateur,&nbsp;</span><span style="color: rgb(0, 0, 0);"><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/developpeur/outils/angular-js.shtml"><span style="font-size: 14px;">AngularJS</span></a><span style="font-size: 14px;">&nbsp;demeure la technologie la plus utilisées par les start-up françaises, devant&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/solutions/pratique/dictionnaire-du-webmastering/technologies-langages/19497/jquery-definition.html"><span style="font-size: 14px;">JQuery</span></a><span style="font-size: 14px;">. "Sa domination sur le marché est d'autant plus remarquable que sa première version a été lancée en 2009, et qu'Angular a par conséquent su convaincre des entreprises créées antérieurement", commente Edouard Rosenblum (voir le graphique ci-dessous).&nbsp;</span></span></span></p><p style="text-align: center; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><img style="width: 50%;" alt="Résultat de recherche d'images pour &quot;innovation digitale&quot;" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWUpmBencA34JLzC8BwXziba8AuZDoiHwSI6dstwEtrXB9wuud"></span></p><h2 style="line-height: 1.25; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 0.52em; margin-bottom: 0px; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;"><br></span></span></h2><h2 style="line-height: 1.25; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 0.52em; margin-bottom: 0px; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;">ReactJS : le&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/solutions/pratique/dictionnaire-du-webmastering/outils/19466/framework-definition-traduction.html"><span style="font-size: 14px;">framework</span></a><span style="font-size: 14px;">&nbsp;à suivre</span></span></h2><h2 style="line-height: 1.25; letter-spacing: -0.42px; font-size: 1.12rem; font-weight: 600; margin-top: 0.52em; margin-bottom: 0px; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;"><br></span></span></h2><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;" dir="ltr"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;">Qu'en est-il de ReactJS&nbsp;? Le&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="http://www.journaldunet.com/solutions/pratique/dictionnaire-du-webmastering/outils/19466/framework-definition-traduction.html"><span style="font-size: 14px;">framework</span></a><span style="font-size: 14px;">&nbsp;JavaScript de Facebook, publié en open source par le réseau social en 2013, est utilisé par quelque 5% des entreprises analysées. Au vue de l'explosion de sa popularité en 2015 (voir&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="https://www.google.fr/trends/explore#q=ReactJS&amp;cmpt=q&amp;tz=Etc%2FGMT-1"><span style="font-size: 14px;">le graphique correspondant sur Google Trend</span></a><span style="font-size: 14px;">), "il sera intéressant d'analyser dans quelques mois sa courbe de croissance en termes d'adoption", analyse Edouard Rosenblum.</span></span></p><p class="Standard" style="text-align: justify; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><strong style="box-sizing: inherit;"><span style="font-size: 14px;">Choisir le bon PaaS…</span></strong><span style="font-size: 14px;">
+Avec l’émergence de nouveaux usages, particulièrement mobiles, engendrés par la technologie, l’approche servicielle a évolué. Les applications monolithiques aux multiples rubriques sont amenées à disparaître au profit d’une équation considérablement simplifiée : un usage = un service = une application dédiée. Dans le domaine des grands laboratoires pharmaceutiques, ce sont plus de cent nouvelles applications qui ont été créées en moins d’un an.
+A nouvelle approche, nouvelles règles du jeu : celles de pouvoir développer à grande vitesse de nouvelles applications, de nouvelles versions et une architecture de services assurant une intégration souple des process. 
+Les plateformes PaaS (Platform-as-a-Service), en pleine boom, présentent dans ce contexte de nombreux avantages :
+- Elles permettent de réutiliser des services techniques partagés déjà existants pour construire de nouvelles applications en un temps record. Une sorte de ego partagé avec une large communauté, dont la variété de « briques » disponibles et s'enrichit (« social »n « m-commerce », « analytique »...) et croît de manière exponentielle.
+- Elles permettent d’intégrer tous ces services nativement dans le cloud. Les équipes de développement peuvent ainsi se libérer des contraintes d’hébergement, de maintenance technique, de sécurité de l’environnement dans lequel est développée l’application.
+- Elles sont interconnectables avec les outils CRM.</span></span></p><p class="Standard" style="margin: 0px 0px 0.35em; text-align: justify; color: rgb(48, 48, 48); text-transform: none; line-height: 1.6; text-indent: 0px; letter-spacing: -0.42px; font-size: 15px; font-style: normal; font-weight: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; orphans: 2; widows: 2; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="font-family: &quot;Times New Roman&quot;; box-sizing: border-box;"><br style="box-sizing: inherit;"><span style="font-size: 14px; box-sizing: border-box;">Avec l’émergence de nouveaux usages, particulièrement mobiles, engendrés par la technologie, l’approche servicielle a évolué. Les applications monolithiques aux multiples rubriques sont amenées à disparaître au profit d’une équation considérablement simplifiée&nbsp;: un usage = un service = une application dédiée. Dans le domaine des grands laboratoires pharmaceutiques, ce sont plus de cent nouvelles applications qui ont été créées en moins d’un an.</span><br style="box-sizing: inherit;"><span style="font-size: 14px; box-sizing: border-box;">A nouvelle approche, nouvelles règles du jeu&nbsp;: celles de pouvoir développer à grande vitesse de nouvelles applications, de nouvelles versions et une architecture de services assurant une intégration souple des process.&nbsp;</span></span></p><p class="Standard" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p class="Standard" style="margin: 0px 0px 0.35em; text-align: justify; color: rgb(48, 48, 48); text-transform: none; line-height: 1.6; text-indent: 0px; letter-spacing: -0.42px; font-size: 15px; font-style: normal; font-weight: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; orphans: 2; widows: 2; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px; box-sizing: border-box;">Les plateformes PaaS (Platform-as-a-Service), en pleine boom, présentent dans ce contexte de nombreux avantages&nbsp;:</span></p><p class="Standard" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p class="MsoListParagraph" style="margin: 0px 0px 0.35em; text-align: justify; color: rgb(48, 48, 48); text-transform: none; line-height: 1.6; text-indent: 0cm; letter-spacing: -0.42px; font-size: 15px; font-style: normal; font-weight: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; orphans: 2; widows: 2; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="font-family: &quot;Times New Roman&quot;; box-sizing: border-box;"><span style="font-size: 14px; box-sizing: border-box;">- Elles permettent de réutiliser des services techniques partagés déjà existants pour construire de nouvelles applications en un temps record. Une sorte de ego partagé avec une large communauté, dont la variété de «&nbsp;briques&nbsp;» disponibles et s'enrichit («&nbsp;social&nbsp;»n «&nbsp;m-commerce&nbsp;», «&nbsp;analytique&nbsp;»...) et croît de manière exponentielle.</span><br style="box-sizing: inherit;"></span></p><p class="Standard" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p class="MsoListParagraph" style="margin: 0px 0px 0.35em; text-align: justify; color: rgb(48, 48, 48); text-transform: none; line-height: 1.6; text-indent: 0cm; letter-spacing: -0.42px; font-size: 15px; font-style: normal; font-weight: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; orphans: 2; widows: 2; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px; box-sizing: border-box;">- Elles permettent d’intégrer tous ces services nativement dans le cloud. Les équipes de développement peuvent ainsi se libérer des contraintes d’hébergement, de maintenance technique, de sécurité de l’environnement dans lequel est développée l’application.</span></p><p class="Standard" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p class="MsoNormal" style="margin: 0px 0px 0.35em; text-align: justify; color: rgb(48, 48, 48); text-transform: none; line-height: 1.6; text-indent: 0px; letter-spacing: -0.42px; font-size: 15px; font-style: normal; font-weight: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; orphans: 2; widows: 2; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px; box-sizing: border-box;">- Elles sont interconnectables avec les outils CRM.</span></p><p class="Standard" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p class="MsoNormal" style="text-align: justify; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"></p><p style="text-align: center; color: rgb(48, 48, 48); line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><a class="fancy" style="color: rgb(206, 6, 9); font-family: &quot;Times New Roman&quot;; box-sizing: inherit;" href="http://i-cms.journaldunet.com/image_cms/original/10207329.jpg"><img style="margin: 0.75em auto; vertical-align: top; display: none !important; max-width: 100%; box-sizing: inherit;" alt="" src="http://i-cms.journaldunet.com/image_cms/600/10207329.jpg"></a></p><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><span style="font-size: 14px;">L'étude publiée par Breaz s'accompagne d'un nouveau service, baptisé&nbsp;</span><a style="text-decoration: underline; box-sizing: inherit;" href="https://startupstack.io/"><span style="font-size: 14px;">Startupstack</span></a><span style="font-size: 14px;">, qui permet de rechercher des entreprises en fonction des technologies web qu'elles utilisent.</span></span></p><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 18px;"><br></span></p><p style="line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 18px;"><br></span></p><p style="text-align: center; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><img style="width: 50%;" alt="Afficher l'image d'origine" src="http://blog.laplateformedelarenovation.fr/wp-content/uploads/2015/12/projecteur-hologramme.jpg"></span></p><p style="text-align: center; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="text-align: center; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="font-family: &quot;Times New Roman&quot;;"><br></span></p><p style="text-align: left; line-height: 1.6; letter-spacing: -0.42px; margin-bottom: 0.35em; box-sizing: inherit;"><span style="text-align: justify; color: rgb(48, 48, 48); letter-spacing: -0.42px; font-family: &quot;Times New Roman&quot;; font-size: 14px;">Difficile d’anticiper une telle évolution il y a 10 ans&nbsp;! Et pourtant, la nouvelle ère digitale que nous vivons est en train de rapidement faire bouger les lignes du champ d’intervention des équipes IT. A mesure que les usages connectés (IoT) s’imposent, les services technologiques occupent une place toujours plus essentielle dans le monde de l’entreprise&nbsp;: le Gartner prévoit qu’en 2017 les budgets technologie seront doublés, partagés à moitié entre IT et OT (Operation Technology). Reste à définir l’organisation optimale pour développer, monitorer et optimiser ces services. Pour l’IT, c’est le moment tant attendu de passer d’une fonction de support à une fonction opérationnelle. Mais pour que ce changement soit pleinement effectif, les équipes informatiques se doivent de développer de nouvelles compétences pour optimiser la gestion du catalogue de services et devenir de véritables garants de la qualité de service aux clients. Dans ce contexte, la redéfinition de la plateforme de services s’avère indispensable.</span><strong style="text-align: justify; color: rgb(48, 48, 48); letter-spacing: -0.42px; font-family: Poppins, serif; box-sizing: inherit;"><br style="box-sizing: inherit;"></strong></p>
+                                        </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="questionnaire">
+                                <p>Trouvez ci-dessous les réponses au questionnaire</p><br>
+                                    <h4 class="question">
+                                        Question Alpha
+                                    </h4>
+                                    <p class="response">
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Business model
+                                    </h4>
+                                    <p class="response">
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Team
+                                    </h4>
+                                    <p class="response">
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Go further ? 
+                                    </h4>
+                                    <p class="response">
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Segway
+                                    </h4>
+                                    <p class="response">
+                                        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid
+                                        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren
+                                        sadipscing mel.
+                                    </p>
+                                    <br>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade" id="commentaire">
+                                    <p>Laisser un commentaire</p>
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="4" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12 pull-right">
+                                            <button class="btn btn-primary waves-effect pull-right" style="text-transform: uppercase" type="submit">COMMENTER
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="notation">
+                                <h4 style="display:inline-block; color: #fff; background-color:#2b982b;padding:15px;"><b>Note moyenne globale : 13,88</b></h4>
+                                <br>
+                                    <h4 class="question">
+                                        Question Alpha
+                                    </h4>
+                                    <p class="response">
+                                    Note moyenne : 15,75 / 20
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Business model
+                                    </h4>
+                                    <p class="response">
+                                    Note moyenne : 16,05 / 20
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Team
+                                    </h4>
+                                    <p class="response">
+                                    Note moyenne : 11,25 / 20
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Go further ? 
+                                    </h4>
+                                    <p class="response">
+                                    Note moyenne : 12,33 / 20
+                                    </p>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Segway
+                                    </h4>
+                                    <p class="response">
+                                    Note moyenne : 14 / 20
+                                    </p>
+                                    <br>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="evaluation">
+                                <div class="alert alert-success note-success">
+                                    Votre évaluation a été sauvegardé !  
+                                </div>
+                                    <h4 class="question">
+                                        Question Alpha
+                                    </h4>
+                                    <div class="irs-demo">
+                                        <input type="text" id="question1" value="" />
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="2" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Business model
+                                    </h4>
+                                    <div class="irs-demo">
+                                        <input type="text" id="question2" value="" />
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="2" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Team
+                                    </h4>
+                                    <div class="irs-demo">
+                                        <input type="text" id="question3" value="" />
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="2" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Go further ? 
+                                    </h4>
+                                    <div class="irs-demo">
+                                        <input type="text" id="question4" value="" />
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="2" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <h4 class="question">
+                                        Segway
+                                    </h4>
+                                    <div class="irs-demo">
+                                        <input type="text" id="question5" value="" />
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="form-line">
+                                            <textarea rows="2" class="form-control no-resize" placeholder="Votre commentaire" required autofocus></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 pull-right">
+                                            <button class="btn btn-primary waves-effect pull-right" id="submit-note" style="text-transform: uppercase" type="submit">SAUVEGARDER
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!---- end card bod --->
+
+                </div>
+            </div>
+            </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="powered_by_particeep" style="
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f2f2f2 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+    Propulsé par
+
+
+    <a href="" style="
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f05e50 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+        weapply.io
+
+
+    </a>
+</div>
+
+
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+
+<!-- Flot Charts Plugin Js -->
+<script src="../../plugins/flot-charts/jquery.flot.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.time.js"></script>
+
+<!-- Sparkline Chart Plugin Js -->
+<script src="../../plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+<!-- Custom Js -->
+
+    <script src="../../plugins/chartjs/Chart.bundle.js"></script>
+
+    <script src="../../js/pages/charts/chartjs.js"></script>
+
+
+
+    <script src="../../plugins/ion-rangeslider/js/ion.rangeSlider.js"></script>
+    <script src="../../js/pages/ui/range-sliders.js"></script>
+<script src="../../js/home.js"></script>
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
+</body>
+
+</html>

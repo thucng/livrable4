@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Les évaluateurs de ma plateforme</title>
+    <!-- Favicon-->
+    <link rel="icon" href="https://test-api.particeep.com/document/bcf9db31-c0a4-4ed7-b34e-a979b84bf075" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- JQuery DataTable Css -->
+    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+        <!-- Colorpicker Css -->
+    <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Dropzone ss -->
+    <link href="../plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- Multi Select Css -->
+    <link href="../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-light-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Chargement...</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="../index.html">LOIRE ATLANTIQUE</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <img src="https://test-api.particeep.com/document/d5496eae-e0ac-4e89-aa65-d59e85272204" data-toggle="dropdown" width="48" height="48" alt="User" style="border-radius: 50%; margin-top: 10px;" />
+
+                        <ul class="dropdown-menu pull-right" style="min-width:180px;">
+                            <li><a href="ptf/profile.html"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="ptf/my-projects.html"><i class="material-icons">folder</i>Mes projets</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="ptf/espace-evaluation.html"><i class="material-icons">assignment</i>Espace évaluateur</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="ptf/home.html"><i class="material-icons">input</i>Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                </div>
+                
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <a href="../index.html">
+                            <i class="material-icons">home</i>
+                            <span>Tableau de bord</span>
+                        </a>
+                    </li>
+                    <li class="header">Configuration</li>
+                    <li>
+                        <a href="../pages/categories.html">
+                            <i class="material-icons">label</i>
+                            <span>Catégories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/content.html">
+                            <i class="material-icons">description</i>
+                            <span>Pages éditables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/design.html">
+                            <i class="material-icons">text_fields</i>
+                            <span>Design</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/setting.html">
+                            <i class="material-icons">settings</i>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                    <li class="header">Administration</li>
+                    <li>
+                        <a href="../pages/users.html">
+                            <i class="material-icons">supervisor_account</i>
+                            <span>Utilisateurs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/projects.html">
+                            <i class="material-icons">folder</i>
+                            <span>Projets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/questions.html">
+                            <i class="material-icons">equalizer</i>
+                            <span>Critères d'évaluation</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="material-icons">touch_app</i>
+                            <span>Attribuer des évaluateurs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/data.html">
+                            <i class="material-icons">import_export</i>
+                            <span>Import de données</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2016 - 2017 <a href="javascript:void(0);">Weapply.io</a>.
+                </div>
+                <div class="version">
+                    <b>Version: </b> 1.0
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>
+                    ÉVALUATEURS 
+                </h2>
+            </div>
+            <!-- Basic Examples -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    
+
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Attribuer des évaluateurs
+                            </h2>
+                        </div>
+                        <div class="body">
+
+
+                            <div class="row clearfix">
+
+                                <div class="col-md-12">
+                                    <h4>Les projets</h4>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+
+                                <div class="col-md-4">
+                                    <p>
+                                        Rechercher
+                                    </p>
+                                        
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <input type="text" class="form-control" placeholder="commencer à écrire" />
+                                                                </div>
+                                                            </div> 
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        Status
+                                    </p>
+                                    <select class="form-control show-tick">
+                                        <option>Choisissez une valeur</option>
+                                        <option>Brouillon</option>
+                                        <option>Publié</option>
+                                        <option>Non sélectionné</option>
+                                        <option>Soumis</option>
+                                        <option>A l'étude</option>
+                                        <option>En attente</option>
+                                        <option>Selectionné</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        Categories
+                                    </p>
+                                    <select class="form-control show-tick" multiple>
+                                        <option><span style="color:rgb(255, 152, 0);">Art<span>
+                                                </option>
+                                        <option><span style="color:rgb(96, 125, 139);">IT<span></option>
+                                        <option>
+                                                <span style="color:rgb(0, 188, 212)">Transport<span></option>
+                                        <option>
+                                                <span style="color:rgb(0, 150, 136);">Biotech<span></option>
+                                        <option>
+                                                <span style="color:rgb(233, 30, 99);">Santé<span></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <select id="optgroup" class="ms" multiple="multiple">
+                                    <option value="AK">
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Brand New Project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Santé<span>,
+                                                <span style="color:rgb(0, 188, 212)">Biotech<span>
+                                            </div>
+                                        </div>  
+                                    </option>
+                                    <option value="HI">
+                                        
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Create your project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">   25/07/2011</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Art<span>,
+                                                <span style="color:rgb(0, 188, 212)">IT<span>
+                                            </div>
+                                        </div>
+                                    </option>
+                                    <option value="CA">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Demo courbevoie</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">12/01/2009</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Art<span>,
+                                                <span style="color:rgb(0, 188, 212)">Transport<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="NV">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Innovation is the key</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">20/12/2015</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">IT<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="OR">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Innovations Sociales & Maladies</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Art<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="WA">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">La société intelligente</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">15/09/2009</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Santé<span>,
+                                                <span style="color:rgb(0, 188, 212)">Transport<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="AZ">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Renovatoo</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">06/08/2012</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Art<span>,
+                                                <span style="color:rgb(0, 188, 212)">Biotech<span>
+                                            </div>
+                                        </div>
+                                        </option>
+                                    <option value="CO">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Brand New Project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">IT<span>,
+                                                <span style="color:rgb(0, 188, 212)">Transport<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="ID">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Brand New Project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Art<span>,
+                                                <span style="color:rgb(0, 188, 212)">Santé<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="MT">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Brand New Project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(0, 188, 212)">Santé<span>
+                                            </div>
+                                        </div></option>
+                                    <option value="NE">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Brand New Project</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">24/03/2017</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                <span style="color:rgb(255, 152, 0);">Santé<span>,
+                                                <span style="color:rgb(0, 188, 212)">Transport<span>
+                                            </div>
+                                        </div></option>
+                            </select>
+                                </div>
+                            </div>
+
+    <br><br><br>
+                            <div class="row clearfix">
+
+                                <div class="col-md-12">
+                                    <h4>Les utilisateurs</h4>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+
+                                <div class="col-md-12">
+                                    <p>
+                                        Rechercher
+                                    </p>
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <input type="text" class="form-control" placeholder="commencer à écrire" />
+                                                                </div>
+                                                            </div> 
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <select id="optgroup2" class="ms" multiple="multiple">
+                                    <option value="AK">
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Airi Satou</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">charles.beaufils@particeep.com</span>
+                                            </div> - 
+                                            <div class="col-cate">
+                                                0784487859
+                                            </div>
+                                        </div>  
+                                    </option>
+                                    <option value="HI">
+                                        
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Angel Di Maria</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">   paxufu@vpsorg.top</span>
+                                            </div> - 
+                                            <div class="col-cate">+44 11230202
+                                            </div>
+                                        </div>
+                                    </option>
+                                    <option value="CA">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Ashton Silvar</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">jgrei@igojrei.com</span>
+                                            </div> - 
+                                            <div class="col-cate">0022996736025
+                                            </div>
+                                        </div></option>
+                                    <option value="NV">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Colleen Hurst</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">hurst@asda.com</span>
+                                            </div> - 
+                                            <div class="col-cate">  0784487859
+                                            </div>
+                                        </div></option>
+                                    <option value="OR">
+
+                                        <div class="fl-list rows">
+                                            <div class="text-ellipsis col-name-enterprise">
+                                                <a ng-href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project" target="_blank" href="/projects/1673d186-5c97-4cee-ba69-3851587ba980/brand-new-project"><label title="Brand New Project" class="nomargin ng-binding">Haley Kennedy</label></a>
+                                            </div> - 
+                                            <div class="col-date">
+                                                <span class="ng-binding">bidule@particeep.com</span>
+                                            </div> - 
+                                            <div class="col-cate">0784487859
+                                            </div>
+                                        </div></option>
+                                    
+                            </select>
+                                </div>
+                            </div>
+
+
+                    <div class="row clearfix">
+                    <div class="col-md-12">
+                            <div style="text-align: right; margin-top:15px;">
+                                                    <button type="button" class="btn btn-primary">
+                                                       CONFIRMER
+                                                    </button>
+                                                    </div>
+                                                    </div>
+                        </div>
+                    </div>
+
+</div>
+ <div class="card">
+                        <div class="header">
+                            <h2>
+                                List des évaluateurs
+                            </h2>
+                        </div>
+                        <div class="body">
+                        <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Nom du projet </th>
+                                            <th>Quantité </th>
+                                            <th>Évaluateurs </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Brand New Project  </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div style="display: flex;   align-items: center;">
+                                                    Airi Satou 
+                                        <i class="material-icons" style="border: 1px solid #ff0000; color:#ff0000; font-size: 13px;border-radius: 50%;margin-left: 4px;">close</i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>amazing project </td>
+                                            <td>2</td>
+                                            <td>
+                                                
+                                                <div style="display: flex;   align-items: center;">
+                                                    Hind Guessous 
+                                        <i class="material-icons" style="border: 1px solid #ff0000; color:#ff0000; font-size: 13px;border-radius: 50%;margin-left: 4px;">close</i>
+                                                </div>
+
+                                                <div style="display: flex;   align-items: center;">
+                                                    Hugo Mathieu
+                                        <i class="material-icons" style="border: 1px solid #ff0000; color:#ff0000; font-size: 13px;border-radius: 50%;margin-left: 4px;">close</i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>top of the world</td>
+                                            <td>2</td>
+                                            <td>
+                                                
+                                                <div style="display: flex;   align-items: center;">
+                                                   Ilheme Zemzemi 
+                                        <i class="material-icons" style="border: 1px solid #ff0000; color:#ff0000; font-size: 13px;border-radius: 50%;margin-left: 4px;">close</i>
+                                                </div>
+                                                
+                                                <div style="display: flex;   align-items: center;">
+                                                    
+Jean Zoppa
+                                        <i class="material-icons" style="border: 1px solid #ff0000; color:#ff0000; font-size: 13px;border-radius: 50%;margin-left: 4px;">close</i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrapore Js -->
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Bootstrap Colorpicker Js -->
+    <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+
+    <!-- Dropzone Plugin Js -->
+    <script src="../plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="../plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+    <!-- noUISlider Plugin Js -->
+    <script src="../plugins/nouislider/nouislider.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../js/admin.js"></script>
+    <script src="../js/pages/forms/advanced-form-elements.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../js/demo.js"></script>
+</body>
+
+</html>

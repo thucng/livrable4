@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Platform de sourcing projets</title>
+    <!-- Favicon-->
+    <link rel="icon" href="https://test-api.particeep.com/document/bcf9db31-c0a4-4ed7-b34e-a979b84bf075" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="../../plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/project.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-light-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Chargmenet...</p>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="START TYPING...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="home-session.html">LOIRE ATLANTIQUE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Call Search -->
+                <li><a href="candidater.html" >Candidater</a></li>
+                    <li><a href="projects.html" >Liste des projets</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Mon compte
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Mon compte</li>
+                        <li class="body">
+                            <ul class="menu">
+                               <li>
+                                    <a href="profile.html">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">person</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mon profil</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="my-projects.html">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">folder</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mes projet</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="espace-evaluation.html">
+                                        <div class="icon-circle bg-red">
+                                            <i class="material-icons">assignment</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Espace évaluateur</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html">
+                                        <div class="icon-circle bg-orange">
+                                            <i class="material-icons">desktop_windows</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Administration</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="home.html" style="display: flex; align-items: center;">
+                                        <div class="icon-circle bg-blue-grey">
+                                            <i class="material-icons">exit_to_app</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Déconnecter</h4>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer">
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<section style="width: 100%; margin-top: 70px;">
+    <div class="project-detail-cover">
+
+      
+            <div class="detail_header">
+                <div class="container">
+                    <div class="detail_header_title">
+                        
+                        <a href="edit-profile.html">
+                        <div style="position:absolute; right: 20px;top:20px; background: #fff; color:#2196F3;border-radius: 3px;">
+                            <span class="vote-badge badge " style="background: #fff; color:#2196F3; border-radius:5px;"> <i class="material-icons card-project_tag_i">create</i> Editer </span>
+                        </div> 
+                        </a>
+
+                        <div class="detail_logo">
+                            <img class="detail_logo_img" src="https://test-api.particeep.com/document/d5496eae-e0ac-4e89-aa65-d59e85272204">
+                        </div>
+
+
+                        <div>
+                            <h1 class="detail_name truncate" style="margin-bottom:15px;">NGUYEN Dong Thuc</h1>
+                            <ul class="detail_tags" style="flex-direction: column; margin-left: 15px;">
+                                <li class="detail_tag_logo" style="margin-bottom:5px">
+                                    <i class="material-icons detail_tag_logo_i">location_on</i>
+                                    <span class="italic">Paris
+                                    </span>
+                                </li>
+                                 <li class="detail_tag_logo"  style="margin-bottom:5px">
+                                    <md-icon class="detail_tag_logo_i material-icons mat-icon" style="margin-right:5px;">
+                                        local_phone
+                                    </md-icon>
+                                                07898454445
+                                </li>
+                                 <li class="detail_tag_logo"  style="margin-bottom:5px"> 
+                                    <md-icon class="detail_tag_logo_i material-icons mat-icon" style="margin-right:5px;">
+                                        mail
+                                    </md-icon>
+                                               thucngdg@gmail.com
+                                </li>
+                                <li class="detail_tag_logo"  style="margin-bottom:5px">
+                                    <md-icon class="detail_tag_logo_i material-icons mat-icon" style="margin-right:5px;">
+                                        label
+                                    </md-icon>
+                                                Art, IT
+                                </li>
+
+                            </ul>
+                        </div>
+
+                   </div>    
+                
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="detail_body">
+
+                <div class="container">
+                        <h2>Mes projets (2)</h2>
+                        <br><br>
+
+
+                        <div class="row clearfix">
+            <div class="col-md-4">
+                <a href="tunnel.html" class="project_block_link">
+                <div class="card project">
+                    <img src="https://api.particeep.com/document/d06997e6-6402-4485-add1-1d50a44ece86" alt="" class="project-photo-cover">
+                    <div class="body">
+                        <h3 class="project-name">C1</h3>
+                        <ul class="card-project_tags">
+                            <li class="card-project_tag">
+                                <i class="material-icons card-project_tag_i">location_on</i>
+                                <span>Rouen</span>
+                            </li>
+                            <li class="card-project_tag">
+                                <i class="material-icons card-project_tag_i">label</i>
+                                <span style="color:rgb(255, 152, 0);"> Art <span>,
+                                                <span style="color:rgb(96, 125, 139);"> IT <span>
+                            </li>
+                        </ul>
+                        <div class="project-vote">
+                            <span class="vote-badge badge bg-blue"><i class="material-icons card-project_tag_i">create</i> Editer </span>
+                        </div>
+                        <p class="card-project_p">
+                            La société C1 est une société de marchands de bien créée en 2011 intervenant sur la ville de Rouen et son agglomération.
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="tunnel.html" class="project_block_link">
+                <div class="card project">
+                    <img src="https://api.particeep.com/document/17fd1bd6-236c-4e73-8012-0dfd8adc1af8" class="project-photo-cover">
+                    <div class="body">
+                        <h3 class="project-name">Eurobio Ingen</h3>
+                        <ul class="card-project_tags">
+                            <li class="card-project_tag">
+                                <i class="material-icons card-project_tag_i">location_on</i>
+                                <span>Inconnu</span>
+                            </li>
+                            <li class="card-project_tag">
+                                <i class="material-icons card-project_tag_i">label</i>
+                                <span style="color:rgb(255, 152, 0);">Art<span>,
+                                                <span style="color:rgb(0, 188, 212)">Transport<span>
+                            </li>
+                        </ul>
+                        <div class="project-vote">
+                            <span class="vote-badge badge bg-blue"><i class="material-icons card-project_tag_i">create</i> Editer </span>
+                        </div>
+                        <p class="card-project_p">
+                            Eurobio Ingen est une société française qui développe, produit et commercialise des réactifs destinés à la Recherche et au Diagnostic biomédical.
+
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            </div>
+                </div>
+                </div>
+
+</section>
+<div class="powered_by_particeep" style="
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f2f2f2 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+    Propulsé par
+
+
+    <a href="" style="
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f05e50 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+        weapply.io
+
+
+    </a>
+</div>
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+
+<!-- Flot Charts Plugin Js -->
+<script src="../../plugins/flot-charts/jquery.flot.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.time.js"></script>
+
+<!-- Sparkline Chart Plugin Js -->
+<script src="../../plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+<!-- Custom Js -->
+
+<script src="../../js/home.js"></script>
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
+</body>
+
+</html>

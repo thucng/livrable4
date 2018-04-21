@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Platform de sourcing projets</title>
+    <!-- Favicon-->
+    <link rel="icon" href="https://test-api.particeep.com/document/bcf9db31-c0a4-4ed7-b34e-a979b84bf075" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="../../plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-light-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Chargmenet...</p>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="START TYPING...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="index.html">LOIRE ATLANTIQUE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Call Search -->
+                <li><a href="./candidater-without.html" >Candidater</a></li>
+                <li><a href="" >Liste des projets</a></li>
+                <li><a href="" >Contactez-nous</a></li>
+                <li><a href="./signin.html" >S’inscrire</a></li>
+                <li><a href="#" >Se connecter</a></li>
+                <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<section  style="margin-top:70px; padding: 50px; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items:center; background-color: #e9e9e9;">
+    <div>
+        <div>
+            <div class="card" style="margin-bottom: 0;">
+            <div class="header">
+                <h2>Editer mon profil</h2>
+            </div>
+                <div class="body">
+                <div class="row clearfix">
+                                        <div class="col-md-3">
+                                            
+                                            <img src="https://test-api.particeep.com/document/d5496eae-e0ac-4e89-aa65-d59e85272204" alt="" class="img-responsive">
+                                            <br>
+                                            <div class="text-center">
+
+                                            <button type="button" class="btn btn-primary waves-effect">
+                                                <i class="material-icons">file_upload</i>
+                                                <span>LOGO</span>
+                                            </button>
+                                            </div>
+                                            <br>
+                                            <p class="text-center m-t-10">Max 10Mo</p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h2 class="card-inside-title">Prénom *</h2>
+                                            <div class="form-group">
+                                            <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Dong Thuc">
+                                            </div>
+                                            </div>
+
+                                            <h2 class="card-inside-title">Nom de famille *</h2>
+                                            <div class="form-group">
+                                            <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="NGUYEN">
+                                            </div>
+                                            </div>
+
+                                            <h2 class="card-inside-title">Numéro de téléphone</h2>
+                                            <div class="form-group">
+                                            <div class="form-line">
+                                            <input type="number" class="form-control" placeholder="07898454445">
+                                            </div>
+                                            </div>
+
+                                            <h2 class="card-inside-title">Linkedin</h2>
+                                            <div class="form-group">
+                                            <div class="form-line">
+                                            <input type="text" class="form-control" placeholder="Votre profil Linkedin">
+                                            </div>
+                                            </div>
+
+                                            <h2 class="card-inside-title">Biographie</h2>
+                                            <div class="form-group">
+                                            <div class="form-line">
+                                            <textarea rows="4" class="form-control no-resize" placeholder="Quelques mots a propos de vous"></textarea>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row clearfix">
+                                        <div class="col-md-12">
+                                            <a href="profile.html" class="btn btn-primary pull-right">SAUVEGARDER</a>
+                                        </div>
+                                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="powered_by_particeep" style="
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f2f2f2 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+    Propulsé par
+
+
+    <a href="" style="
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f05e50 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+        weapply.io
+
+
+    </a>
+</div>
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+
+<!-- Flot Charts Plugin Js -->
+<script src="../../plugins/flot-charts/jquery.flot.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.time.js"></script>
+
+<!-- Sparkline Chart Plugin Js -->
+<script src="../../plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+<!-- Custom Js -->
+
+<script src="../../js/home.js"></script>
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
+</body>
+
+</html>
