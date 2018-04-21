@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+
+    
+       <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+ <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="../../plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="variables.css">
+	<link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trash.css">
+
+</head>
+<body>
+
+<header id="header" class="header">
+	<div class="header__content">
+		<img src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/logo.png" class="logo" alt="Weapply">
+		<nav>
+			<a class="nav__link smoothScroll" data-scroll-to="#demo" >Demander une démo</a>
+		</nav>
+	</div>
+</header><!-- /header -->
+
+<section class="landing">
+	<div class="section__content flex">
+		<div class="landing__content">
+			<div class="landing__inner">
+				<h1 class="landing__title">Lancez votre plateforme d’appels à projets</h1>
+				<p class="landing__body-text">Weapply.io est une solution de sélection de projets en marque blanche créée par Particeep. Weapply.io permet de créer des plateformes d’appel à projets simplifiées, collaboratives et à forte valeur ajoutée pour sélectionner les meilleures candidatures.</p>
+				<a  class="btn-cta smoothScroll" data-scroll-to="#demo">demander une démo</a>
+			</div>
+		</div>
+		<div class="landing__rocket">
+			<div class="rocket">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.19 274.41">
+					<title>rocket</title>
+					<g id="rocket">
+						<path d="M184.68,71.56c-4-16.33-17.5-36.4-35.1-57.37a179.91,179.91,0,0,0-30.52,48.08q-2,4.5-3.83,9.56c-.59,1.6-1.17,3.21-1.72,4.84h.11c-5.15,16.54-8.17,36.75-8.17,58.56,0,29.55,5.55,56.15,14.42,74.69h60.28c8.86-18.54,14.42-45.13,14.42-74.69C194.56,111.11,190.86,89,184.68,71.56ZM150,109.81a17.5,17.5,0,1,1,17.5-17.5A17.5,17.5,0,0,1,150,109.81Z" transform="translate(-80.41 -14.19)"/>
+						<path d="M80.41,209.92l20.37,39.89V224.34l15.28-14.43c-7.64-16.13-10.18-40.74-10.18-40.74Z" transform="translate(-80.41 -14.19)"/>
+						<path d="M219.59,209.92l-25.46-40.74s-2.55,24.61-10.18,40.74l15.28,14.43v25.46Z" transform="translate(-80.41 -14.19)"/>
+					</g>
+				</svg>
+				
+				<div class="exhaust-flame"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wave"></div>
+</section>
+
+
+<section class="feature">
+	<div class="section__content">
+		<div class="section__icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+			  <g fill="none" fill-rule="evenodd">
+			    <circle cx="36" cy="36" r="36" fill="#DADADB"></circle>
+			    <g transform="translate(17 18)">
+			      <path fill="#29B2FF" d="M19.5600502,36.0651333 C18.8846664,36.3753474 18.1073935,36.3746715 17.4325502,36.0632833 L1.47445019,28.6864083 C0.575133673,28.2702769 -0.000378308104,27.3694599 1.86578569e-07,26.3785333 L1.86578569e-07,6.82773333 C1.86578569e-07,6.30510833 0.163725187,5.81023333 0.445850187,5.39583333 L18.4963002,13.7356333 L36.5467502,5.39768333 L19.5600502,36.0651333 Z"></path>
+			      <path fill="#92d7fc" d="M28.4117455,31.9734739 L19.56375,36.0651333 C19.2302166,36.2189074 18.867275,36.298439 18.5,36.2982333 L18.5,13.7374833 L36.5504498,5.39583333 C36.8334998,5.81023333 36.9962998,6.30510833 36.9962998,6.82773333 L36.9962998,25.9742126 L28.7453367,23.2238916 C28.3497705,23.0920361 27.9221085,23.0920361 27.5265422,23.2238916 C26.5168598,23.5604524 25.9711869,24.6517982 26.3077477,25.6614806 L28.4117455,31.9734739 Z"></path>
+			      <path fill="#29B2FF" d="M19.1166667 9.25C17.0734444 9.25 15.4166667 8.42161111 15.4166667 7.4L15.4166667 6.16666667 15.5112222 6.16666667C15.8865667 6.99012222 17.3571111 7.60555556 19.1166667 7.60555556 20.8770444 7.60555556 22.3471778 6.99012222 22.7221111 6.16666667L22.8166667 6.16666667 22.8166667 7.4C22.8166667 8.42161111 21.1598889 9.25 19.1166667 9.25zM28.3666667 6.16666667C26.3234444 6.16666667 24.6666667 5.33827778 24.6666667 4.31666667L24.6666667 3.08333333 24.7612222 3.08333333C25.1365667 3.90678889 26.6071111 4.52222222 28.3666667 4.52222222 30.1270444 4.52222222 31.5971778 3.90678889 31.9721111 3.08333333L32.0666667 3.08333333 32.0666667 4.31666667C32.0666667 5.33827778 30.4098889 6.16666667 28.3666667 6.16666667zM9.86666667 6.9375C7.82344444 6.9375 6.16666667 6.10911111 6.16666667 5.0875L6.16666667 3.85416667 6.26122222 3.85416667C6.63656667 4.67762222 8.10711111 5.29305556 9.86666667 5.29305556 11.6270444 5.29305556 13.0971778 4.67762222 13.4721111 3.85416667L13.5666667 3.85416667 13.5666667 5.0875C13.5666667 6.10911111 11.9098889 6.9375 9.86666667 6.9375zM19.1166667 3.08333333C17.0734444 3.08333333 15.4166667 2.25494444 15.4166667 1.23333333L15.4166667 0 15.5112222 0C15.8865667.823455556 17.3571111 1.43888889 19.1166667 1.43888889 20.8770444 1.43888889 22.3471778.823455556 22.7221111 0L22.8166667 0 22.8166667 1.23333333C22.8166667 2.25494444 21.1598889 3.08333333 19.1166667 3.08333333z"></path>
+			      <path fill="#29B2FF" d="M33.3748829,31.0057568 L29.4847671,34.8957975 C29.3458278,35.0347342 29.1205626,35.0347342 28.9816232,34.8957975 L28.1042045,34.0183957 C27.9652652,33.8794591 27.9652652,33.6541982 28.1042045,33.5152616 L31.9943204,29.6252208 L29.595041,28.2923136 C29.4232779,28.1968915 29.3613928,27.9802978 29.4568168,27.808538 C29.5000449,27.7307288 29.5708704,27.67195 29.6553149,27.6438023 L37.5318137,25.0183534 C37.7182204,24.9562191 37.9197037,25.0569588 37.9818392,25.2433619 C38.0061823,25.3163896 38.0061823,25.3953426 37.9818392,25.4683703 L35.3563397,33.344717 C35.2942041,33.5311201 35.0927208,33.6318598 34.9063141,33.5697255 C34.8218696,33.5415778 34.7510441,33.482799 34.7078159,33.4049898 L33.3748829,31.0057568 Z" transform="rotate(-90 33 30)"></path>
+			    </g>
+			  </g>
+			</svg>
+		</div>
+		<h3 class="section__title">Pourquoi utiliser la plateforme d’appel à projets Weapply.io ?</h3>
+		<div class="flex fl-jc-around">
+			<div class="feature__box">
+				<img class="feature__icon" src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/1.png" alt="">
+				<h4 class="feature__title">Plateforme clé en main</h4>
+				<p class="feature__description">Grâce à Weapply.io, fini les méthodes traditionnelles de gestion de candidatures et d’évaluation. Vous conduisez un appel à projets 100% en ligne et collaboratif.</p>
+			</div>
+			<div class="feature__box">
+				<img class="feature__icon" src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/2.png" alt="">
+				<h4 class="feature__title">Fonctionnalités très puissantes</h4>
+				<p class="feature__description">Personnalisez votre plateforme d’appel à projets à vos couleurs. Intégrez votre design, contrôlez les contenus et activez ou désactivez les fonctionnalités de votre choix.</p>
+			</div>
+			<div class="feature__box">
+				<img class="feature__icon" src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/3.png" alt="">
+				<h4 class="feature__title">Simplicité</h4>
+				<p class="feature__description">Avec Weapply.io, vous gérez très simplement toutes les étapes de votre appel à projets : lancement, candidatures, votes, évaluations, mentorats, sélection et support.</p>
+			</div>
+		</div>
+		<div class="flex fl-jc-around">
+			<div class="feature__box">
+				<img class="feature__icon" src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/4.png" alt="">
+				<h4 class="feature__title">Rapidité</h4>
+				<p class="feature__description">La solution Weapply.io vous permet de gagner un temps considérable ! En 15 minutes chrono, créez votre plateforme d’appel à projets et recevez vos premières candidatures !</p>
+			</div>
+			<div class="feature__box">
+				<img class="feature__icon" src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/5.png" alt="">
+				<h4 class="feature__title">Outils collaboratifs</h4>
+				<p class="feature__description">Bénéficiez de plusieurs outils collaboratifs dans la gestion de vos appels à projets : messagerie, chat, vue d’ensemble de tous les projets, annuaire des membres, etc.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="quote">
+	<div class="quote__control">
+		<div class="quote__icon li-quote-1 q-i--adeo">
+			<img src="imgs/adeo.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-2 q-i--ademe">
+			<img src="imgs/ademe.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-3 q-i--loire-atlantique">
+			<img src="imgs/loireatlantique.png" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-4 q-i--docapost">
+			<img src="imgs/docapost.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-5 q-i--finance-inovation">
+			<img src="imgs/financeinnovation.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-6 q-i--societe-general">
+			<img src="imgs/societegeneral.png" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-7 q-i--vinci">
+			<img src="imgs/vinci.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-8 q-i--humanis">
+			<img src="imgs/humanis.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-9 q-i--la-poste">
+			<img src="imgs/laposte.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-10 q-i--cci">
+			<img src="imgs/cci.jpg" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-11 q-i--normandie-universite">
+			<img src="imgs/normandieuniversite.png" class="quote__img" alt="Bar">
+		</div>
+		<div class="quote__icon li-quote-12 q-i--leroy-merlin">
+			<img src="imgs/leroymerlin.png" class="quote__img" alt="Bar">
+		</div>
+
+	</div>
+	<div class="quote__container">
+		<p class="quote__title">Rejoignez entreprises et indépendants qui nous font déjà confiance</p>
+		<div class="quote__slider" data-speed="1000" data-loop="true" data-carousel="">
+			<div class="quote__item">
+				<p class="quote__text">
+					« La plateforme a répondu à tous nos besoins et l’équipe a été très réactive. Nous avons été accompagnés tout au long du challenge avec un excellent support de l’équipe. Nos questions et requêtes ont été écoutées et le service rendu a été excellent. »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Avec Weapply.io qui repose sur la technologie modulable de Particeep, nous avons pu rapidement mettre au point une plateforme personnalisée d’appels à candidatures et facile d’utilisation.  »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« L’équipe de Weapply.io a été très réactive malgré nos nombreux appels et demandes. Nos interlocuteurs ont su comment nous guider dans la compréhension de l’outil. Nous sommes enchantés d’avoir travaillé avec Weapply.io sur ce projet »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					«  La solution Weapply.io intègre de nombreuses fonctionnalités prêtes à l’emploi, ce qui a permis de mettre en place le site dans des délais très contraints. »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« La solution en marque blanche Weapply.io a permis d’accélérer le processus de notre Challenge Open Innovation en recevant les candidatures et en sélectionnant les meilleurs projets. »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+			<div class="quote__item">
+				<p class="quote__text">
+					« Notre équipe est rarement en France, et c'est un réel plaisir de pouvoir gérer toutes les opérations bancaires de Moneytis, soi-même, en ligne, grâce à une interface aussi bien pensée ! »
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pricing">
+	<div class="section__title">Nos tarifs</div>
+	<div class="pricing__container">
+		<div class="pricing__box">
+			<div class="pricing__icon">
+				<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g fill="#77CE44" fill-rule="evenodd"><path fill-rule="nonzero" opacity=".3" d="M42.52 13.64h4.92v8.2h-4.92zM21.2 43.16h4.92v4.92H21.2zM21.2 36.6h4.92v4.92H21.2zM48.26 31.68h-4.92a.82.82 0 0 1 .82.82v2.46h4.92V32.5a.82.82 0 0 0-.82-.82zM17.92 25.12h4.92v4.92h-4.92z"></path><path opacity=".3" d="M42.52 23.48h4.92v1.64h-4.92z"></path><path d="M48.26 30.04h-5.15l-1.093-3.28h5.423a1.64 1.64 0 0 0 1.64-1.64V13.64A1.64 1.64 0 0 0 47.44 12H29.4a1.64 1.64 0 0 0-1.64 1.64v11.48c0 .906.734 1.64 1.64 1.64h5.423l-1.093 3.28h-9.25v-4.92a1.64 1.64 0 0 0-1.64-1.64h-4.92a1.64 1.64 0 0 0-1.64 1.64v4.92h-.82A2.46 2.46 0 0 0 13 32.5v19.68a.82.82 0 1 0 1.64 0v-2.46h11.48a1.64 1.64 0 0 0 1.64-1.64V36.6h21.32v15.58a.82.82 0 1 0 1.64 0V32.5a2.46 2.46 0 0 0-2.46-2.46zM29.4 13.64h18.04v8.2H29.4v-8.2zm0 9.84h18.04v1.64H29.4v-1.64zm7.15 3.28h3.74l1.093 3.28h-5.926l1.093-3.28zm-18.63-1.64h4.92v4.92h-4.92v-4.92zm8.2 22.96H14.64v-4.92h11.48v4.92zm0-6.56H14.64V36.6h11.48v4.92zm-11.48-6.56V32.5a.82.82 0 0 1 .82-.82h32.8a.82.82 0 0 1 .82.82v2.46H14.64z" fill-rule="nonzero"></path><path fill-rule="nonzero" d="M19.56 26.76h1.64v1.64h-1.64z"></path></g></svg>
+			</div>
+			<p class="pricing__title"></p>
+			<div class="pricing__price">
+                <span class="pricing__price-currency">€</span>
+                0
+                <span class="pricing__price-duty">HT</span>
+                <span class="pricing__price-duration">mois</span>
+			</div>
+			<div class="pricing__body">
+				<ul class="pricing_features">
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>35</em> projets créés</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>1.000</em> membres</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Votes (+/-)</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>your-name.weapply.io</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Analytics – Hotjar – Zopim</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Limité à <em>3</em> évaluateurs</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>1</em> administrateur</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>1</em> langue</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Support : ticketing</span>
+	                </div></li>
+	            </ul>
+			</div>
+		</div>
+
+		<div class="pricing__box">
+			<div class="pricing__icon">
+				<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g fill="#F98D5E" fill-rule="evenodd"><path fill-rule="nonzero" opacity=".3" d="M21.84 37.88h8.2v11.48h-8.2z"></path><path opacity=".3" d="M43.16 50.18h-7.38v-24.6h2.46z"></path><path d="M29.22 29.68h-6.56a.82.82 0 1 0 0 1.64h6.56a.82.82 0 1 0 0-1.64zM29.22 23.12h-6.56a.82.82 0 1 0 0 1.64h6.56a.82.82 0 1 0 0-1.64zM43.98 37.88H40.7a.82.82 0 1 0 0 1.64h3.28a.82.82 0 1 0 0-1.64zM43.98 44.44H40.7a.82.82 0 1 0 0 1.64h3.28a.82.82 0 1 0 0-1.64zM43.98 31.32H40.7a.82.82 0 1 0 0 1.64h3.28a.82.82 0 1 0 0-1.64zM29.22 16.56h-6.56a.82.82 0 1 0 0 1.64h6.56a.82.82 0 1 0 0-1.64z" fill-rule="nonzero"></path><path d="M52.18 49.36h-2.46V27.22a2.46 2.46 0 0 0-2.46-2.46H36.6v-12.3A2.463 2.463 0 0 0 34.14 10h-16.4a2.463 2.463 0 0 0-2.46 2.46v36.9h-2.46a.82.82 0 1 0 0 1.64h39.36a.82.82 0 1 0 0-1.64zm-30.34 0V37.88h8.2v11.48h-8.2zm9.84 0V37.88a1.64 1.64 0 0 0-1.64-1.64h-8.2a1.64 1.64 0 0 0-1.64 1.64v11.48h-3.28v-36.9c0-.452.368-.82.82-.82h16.4c.452 0 .82.368.82.82v36.9h-3.28zm4.92 0V26.4h10.66a.822.822 0 0 1 .82.82v22.14H36.6z" fill-rule="nonzero"></path></g></svg>
+			</div>
+			<p class="pricing__title"></p>
+			<div class="pricing__price">
+                <span class="pricing__price-currency">€</span>
+                399
+                <span class="pricing__price-duty">HT</span>
+                <span class="pricing__price-duration">mois</span>
+			</div>
+			<div class="pricing__body">
+				<ul class="pricing_features">
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>300</em> projets créés</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>5.000</em> membres</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Votes (+/-)</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>your-name.weapply.io</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Analytics – Hotjar – Zopim</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Limité à <em>50</em> évaluateurs</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>1</em> administrateur</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>1</em> langue</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Support : ticketing</span>
+	                </div></li>
+	            </ul>
+			</div>
+		</div>
+
+		<div class="pricing__box">
+			<div class="pricing__icon">
+				<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg"><g fill="#82879E" fill-rule="nonzero"><path opacity=".3" d="M13.5 49.25V26.5h5.25v22.75zM45 26.5h5.25v22.75H45z"></path><path d="M52.875 49.25H52V26.5a1.75 1.75 0 0 0-1.75-1.75H48.5v-.875a.875.875 0 1 0-1.75 0v.875H45a1.75 1.75 0 0 0-1.75 1.75v22.75h-3.5V16A1.75 1.75 0 0 0 38 14.25h-5.25V9.875a.875.875 0 1 0-1.75 0v4.375h-5.25A1.75 1.75 0 0 0 24 16v33.25h-3.5V26.5a1.75 1.75 0 0 0-1.75-1.75H17v-.958a.792.792 0 0 0-.792-.792h-.166a.792.792 0 0 0-.792.792v.958H13.5a1.75 1.75 0 0 0-1.75 1.75v22.75h-.875a.875.875 0 1 0 0 1.75h42a.875.875 0 1 0 0-1.75zm-39.375 0V26.5h5.25v22.75H13.5zm12.25 0V16H38v33.25H25.75zm19.25 0V26.5h5.25v22.75H45z"></path><path d="M35.375 19.5h-7a.875.875 0 1 0 0 1.75h7a.875.875 0 1 0 0-1.75zM35.375 24.75h-7a.875.875 0 1 0 0 1.75h7a.875.875 0 1 0 0-1.75zM35.375 30h-7a.875.875 0 1 0 0 1.75h7a.875.875 0 1 0 0-1.75zM35.375 35.25h-7a.875.875 0 1 0 0 1.75h7a.875.875 0 1 0 0-1.75zM35.375 40.5h-7a.875.875 0 1 0 0 1.75h7a.875.875 0 1 0 0-1.75zM46.75 28.25h1.75V30h-1.75zM46.75 33.5h1.75v1.75h-1.75zM46.75 38.75h1.75v1.75h-1.75zM46.75 44h1.75v1.75h-1.75zM15.25 28.25H17V30h-1.75zM15.25 33.5H17v1.75h-1.75zM15.25 38.75H17v1.75h-1.75zM15.25 44H17v1.75h-1.75z"></path></g></svg>
+			</div>
+			<p class="pricing__title"></p>
+			<div class="pricing__price">
+                <span class="pricing__price-currency">€</span>
+                699
+                <span class="pricing__price-duty">HT</span>
+                <span class="pricing__price-duration">mois</span>
+			</div>
+			<div class="pricing__body">
+				<ul class="pricing_features">
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>1.000</em> projets créés</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Jusqu’à <em>10.000</em> membres</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Votes (+/-)</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Analytics – Hotjar – Zopim</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Votre nom de domaine</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>100</em> évaluateurs</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>5</em> administrateurs</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span><em>2</em> langues (choix FR/EN)</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Support : tel &amp; ticketing</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Composition d’équipes</span>
+	                </div></li>
+	                <li><div>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 14 11">
+							<path id="check" fill="#20afff" d="M4.95 9.65a1.2 1.2 0 0 0 1.7 0l6.6-6.6a1.2 1.2 0 1 0-1.7-1.7L5.8 7.12 3.05 4.35a1.2 1.2 0 1 0-1.7 1.7z"></path>
+						</svg>
+	                    <span>Super-contact (messages groupés)</span>
+	                </div></li>
+	            </ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section>
+    <div class="section__content">
+    	<h3 class="section__title">Comment lancer votre plateforme d’appels à projets avec Weapply.io ?</h3>
+    	<br><br>
+    	<div class="flex fl-jc-around">
+	        <div class="fffeature">
+	            <div class="icon-w-text margin-bottom50">
+	                <img src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/6.png">
+	                <h4 class="text-bold nomargin">Création de l’appel à projet</h4>
+	            </div>
+	            <div class="margin-top50">
+	                <ul class="list-unstyled padding-left30">
+	                    <li class="icon-w-text">
+	                        <div>
+	                            <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Créez votre plateforme d’appels à projets.</p>
+	                    </li>
+	                    <li class="icon-w-text">
+	                        <div>
+	                            <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Recevez vos premières candidatures.</p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	        <div class="fffeature">
+	            <div class="icon-w-text margin-bottom50">
+	                <img src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/7.png">
+	                <h4 class="text-bold nomargin">Mentorat, vote et évaluation</h4>
+	            </div>
+	            <div class="margin-top50">
+	                <ul class="list-unstyled padding-left30">
+	                    <li class="icon-w-text">
+	                        <div>
+	                            <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Invitez les mentors et évaluateurs que vous souhaitez.</p>
+	                    </li>
+	                    <li class="icon-w-text">
+	                        <div>
+	                        <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Recevez les votes et contrôlez leur confidentialité !</p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	        <div class="fffeature">
+	            <div class="icon-w-text margin-bottom50">
+	                <img src="https://weapply.io/public/ecc8540e-79a2-49fe-81de-43af604fc825/images/weapply/8.png">
+	                <h4 class="text-bold nomargin">Sélection et analyse</h4>
+	            </div>
+	            <div class="margin-top50">
+	                <ul class="list-unstyled padding-left30">
+	                    <li class="icon-w-text">
+	                        <div>
+	                            <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Bravo aux projets et idées sélectionnés !</p>
+	                    </li>
+	                    <li class="icon-w-text">
+	                        <div>
+	                            <svg width="8" height="8" viewBox="0 0 16 16"><defs><path id="check" d="M12.561 2.61L5.975 9.181 3.39 6.602a2.003 2.003 0 0 0-2.803.024A1.993 1.993 0 0 0 .56 9.424l4 3.992a2.003 2.003 0 0 0 2.828 0l8-7.984a1.993 1.993 0 0 0-.883-3.367 2.003 2.003 0 0 0-1.945.544z"></path></defs><g fill="#2db1ff" fill-rule="evenodd"><use fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use></g></svg>
+	                        </div>
+	                        <p>Un rapport détaillé des candidatures et des statistiques est à votre disposition.</p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+        </div>
+    </div>
+</section>
+
+<section id="demo">
+	<div class="container form-dkm">
+		<div class="row clearfix">
+			<div class="col-md-6">
+				<div class="wrap">
+		<div class="comp">
+			<div class="monitor">
+				<div class="mid">
+					<div class="site">
+						<div class="topbar">
+							<div class="cerrar">
+								<div class="circl"></div>
+								<div class="circl"></div>
+								<div class="circl"></div>
+							</div>
+						</div>
+						<div class="inhead">
+							<div class="mid">
+								<div class="item"></div>
+							</div>
+							<div class="mid txr">
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+							</div>
+						</div>
+						<div class="inslid">
+							
+						</div>
+						<div class="incont">
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="wid">
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="infoot">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mid codigo">
+					<div class="line">
+						<div class="item var"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item var"></div>
+						<div class="item atr"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item lrg fun"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item lrg atr"></div>
+						<div class="item min fun"></div>
+						<div class="item min cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item atr"></div>
+						<div class="item min fun"></div>
+						<div class="item atr"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item min cont"></div>
+						<div class="item lrg atr"></div>
+						<div class="item  fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item lrg fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab2">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab2">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab4">
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item atr"></div>
+						<div class="item var"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab4">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="base">
+				
+			</div>
+		</div>
+	</div>
+
+
+			</div>
+			 <div class="col-md-6">
+				<div class="card card-dkm">
+					<div class="body">
+					<h4 class="text-center">Tester la solution d’appel à projets Weapply.io ?</h4>
+					<br><br>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="name" placeholder="Nom" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="number" placeholder="Numéro de téléphone" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <textarea rows="4" class="form-control no-resize" placeholder="Objet de votre demande" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 pull-right">
+                            <button class="btn btn-primary waves-effect pull-right" style="text-transform: uppercase" type="submit">ENVOYER
+                            </button>
+                        </div>
+                    </div>
+</div></div>
+            </div>
+		</div>
+	</div>
+</section>
+
+
+<section class="footer">
+    <div class="section__content">
+        <div class="row">
+            <div class="col-md-9 col-xs-12">
+                <p class="footer-title text-center">A propos</p>
+                <p>Weapply.io est une solution de sélection de projets en marque blanche créée par Particeep. Weapply.io permet de créer des plateformes d’appel à projets simplifiées, collaboratives et à forte valeur ajoutée pour sélectionner les meilleures candidatures.<br><br> Vous êtes acteurs de l’open innovation, startups, VC, incubateurs ou tout simplement, vous êtes une entreprise qui souhaite sélectionner les meilleurs projets, Weapply.io a été créée pour vous assurer une meilleure expérience d’utilisation.</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <p class="footer-title">Contactez-nous</p>
+                <p class="nomargin-bottom">+33 (0)1 79 75 66 63 </p>
+                <p class="nomargin-bottom">100 rue Petit, 75019 Paris, France</p>
+                <p class="nomargin-bottom">contact@particeep.com</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<div class="powered_by_particeep" style="
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f2f2f2 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+    Propulsé par
+
+
+    <a href="" style="
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: inherit !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    background: #303034 none repeat scroll 0 0 !important;
+    color: #f05e50 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+">
+
+
+
+
+
+        weapply.io
+
+
+    </a>
+</div>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ractive@0.9"></script>
+
+<script src="global.js"></script>
+<script src="slider.js"></script>
+
+
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+
+<!-- Flot Charts Plugin Js -->
+<script src="../../plugins/flot-charts/jquery.flot.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="../../plugins/flot-charts/jquery.flot.time.js"></script>
+
+<!-- Sparkline Chart Plugin Js -->
+<script src="../../plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+<!-- Custom Js -->
+
+<script src="../../js/home.js"></script>
+</body>
+</html>

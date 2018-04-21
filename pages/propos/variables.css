@@ -1,0 +1,16 @@
+:root{
+  --btn-cta-radius: 3px;
+  --btn-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+
+  --header-box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+
+  --clr-primary: #20afff;
+
+  --clr-white: #fff;
+
+  --font-global: 'Montserrat', sans-serif;
+
+  --clr-pricing-light: #a2a6aa;
+  --clr-pricing-dark: #404e5b;
+
+}

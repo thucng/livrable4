@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6, p, a, span{
+  font-family: var(--font-global);
+}
+
+p {
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+* :before,
+* :after{
+    content: '';
+    position: absolute;
+}
